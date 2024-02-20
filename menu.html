@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Shop - Menu & Ordering</title>
+    <link rel="icon" href="./images/soup.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+        nav {
+            margin: 2%;
+            background-color: #e44d26; /* Namma Shop brand color */
+            padding: 10px;
+            text-align: center;
+            display: flex; /* Display items side by side */
+            justify-content: center; /* Center items horizontally */
+            font-size: large;
+            font-weight: bold;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav:hover
+        {
+            color: green;
+        }
+        h1 {
+            font-size: 2em;
+            color: aqua; /* Namma Shop brand color */
+            margin-bottom: 20px;
+            position: relative;
+        }
+        @keyframes moveText {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<center> <i><h2>Namma Shop Menu</h2></i></center>
+    
+    <nav>
+        <em>
+            
+                <a href="contact.html">Contact Us</a>
+                <a href="hours.html">Hours</a>
+                <a href="practice1.html">Home</a>
+                <a href="#"> Menu</a>
+                <a href="history.html">Our Beginnings</a>
+        </em>
+    </nav>
+
+    <table>
+        <tr>
+            <th>Cocktails</th>
+            <th>Fruit Juices</th>
+            <th>Snacks</th>
+            <th>Starters</th>
+            <th>Sandwiches</th>
+            <th>Burgers</th>
+        </tr>
+        <tr>
+            <td><img src="./images/Mango Mojito.jpeg" alt="Mango Mojito"> <p> Mango Mojito - 159</p></td>
+            <td><img src="./images/Orange Twist.jpeg" alt="Refreshing Orange Twist"> <p>Refreshing Orange Twist - 399</p></td>
+            <td><img src="./images/Veg Spring Rolls.jpeg" alt="Crispy Veg Spring Rolls"> <p>Crispy Veg Spring Rolls (4pcs) - 399</p></td>
+            <td><img src="./images/Butter Shrimp Skewers.jpeg" alt="Garlic Butter Shrimp Skewers"> <p>Garlic Butter Shrimp Skewers - 899</p></td>
+            <td><img src="./images/Veggie Panini.jpeg" alt="Grilled Veggie Panini"> <p>Grilled Veggie Panini - 599</p></td>
+            <td><img src="./images/Royale Burger.jpeg" alt="Royale Burger">  <p>Royale Burger - 999</p></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Watermelon Margarita.jpeg" alt="Watermelon Margarita"><p>Watermelon Margarita - 699</p> </td>
+            <td><img src="./images/Pineapple Paradise.jpeg" alt="Pineapple Paradise"><p>Pineapple Paradise - 449</p> </td>
+            <td><img src="./images/Potato Wedges.jpeg" alt="Spicy Potato Wedges"> <p>Spicy Potato Wedges - 299</p></td>
+            <td><img src="./images/Chicken Satay.jpeg" alt="Chicken Satay"> <p>Chicken Satay - 699</p></td>
+            <td><img src="./images/Turkey Club.jpeg" alt="Classic Turkey Club"> <p>Chicken Satay - 699</p></td>
+            <td><img src="./images/Deluxe Burger.jpeg" alt="Vegetarian Deluxe Burger"> <p>Vegetarian Deluxe Burger - 899</p></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Berry.jpeg" alt="Berry"><p>Beery - 199</p></td>
+            <td><img src="./images/Dragon Flow.jpeg" alt="Dragon Flow"><p>Dragon Flow - 99</p></td>
+            <td><img src="./images/Potato Tiwster.jpeg" alt="Potato Tiwster"><p>Potato Tiwster - 199</p></td>
+            <td><img src="./images/Pepper Fry.jpeg" alt="Pepper Fry"><p>Pepper Fry - 199</p></td>
+            <td><img src="./images/Bread Toast.jpeg" alt="Bread Toast"><p>Bread Toast - 99</p></td>
+            <td><img src="./images/Maharaj Burger.jpeg" alt="Maharaj Burger"><p>Maharaj Burger - 299</p></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+
+    <!-- Ordering Section -->
+    <h2>Place Your Order</h2>
+    <form action="/submit_order" method="post">
+        <table>
+            <h2>
+                    <tbody>
+                            <tr style="float: left;">
+                                <h2>
+                                    
+                                
+                                <label for="shakes"> Cocktails :  </label>
+                                <select name="shakes" id="shakes">
+                                    <option value="mango">Mango Mojito</option>
+                                    <option value="Watermelon">Watermelon Margarita</option>
+                                    <option value="berry">Berry</option>
+                                </select> Cocktails Quantity: <input type="number" name="CocktailsQuantity" value="1" min="1"><br>
+                                <label for="juices"> Fruit Juices :  </label>
+                                <select name="juices" id="juices">
+                                    <option value="orange">Orange Twist</option>
+                                    <option value="pineapple">Pineapple Paradise</option>
+                                    <option value="dragon">Dragon Flow</option>
+                                </select> Fruit Juices Quantity: <input type="number" name="Fruit JuicessQuantity" value="1" min="1"><br>
+                                <label for="snacks"> Snacks : </label>
+                                <select name="snacks" id="snacks">
+                                    <option value="veg">Veg Spring Rolls</option>
+                                    <option value="spicy">Spicy Potato Wedges</option>
+                                    <option value="onion">Potato Tiwster</option>
+                                </select> Snacks Quantity: <input type="number" name="SnacksQuantity" value="1" min="1"> </h2>
+                </tr>
+                <tr>
+                    <h2>
+                    <center>
+                                <label for="starters"> Starters :</label>
+                    <select name="starters" id="starters">
+                        <option value="butter">Butter Shrimp Skewers</option>
+                        <option value="satay">Chicken Satay</option>
+                        <option value="fry">Pepper Fry</option>
+                    </select> Starter Quantity: <input type="number" name="startersQuantity" value="1" min="1">
+                    <label for="sandwiches"> Sandwiches :</label>
+                    <select name="sandwiches" id="sandwiches">
+                        <option value="grilled">Grilled Veggie Panini</option>
+                        <option value="classic">Classic Turkey Club</option>
+                        <option value="bread">Bread Toast</option>
+                    </select> Sandwich Quantity: <input type="number" name="sandwichesQuantity" value="1" min="1">
+                    <label for="burgers"> Burgers :</label>
+                    <select name="burgers" id="burgers">
+                        <option value="royal">Royale Burger</option>
+                        <option value="vegetarian">Vegetarian Deluxe Burger</option>
+                        <option value="maha">Maharaj Burger</option>
+                    </select> Burger Quantity: <input type="number" name="burgersQuantity" value="1" min="1">
+                </center> </h2>
+        <!-- Include input fields for customer details, order quantity, etc. -->
+        <!-- Add a 'Submit Order' button -->
+                </tr>
+            </tbody><br>
+            <input type="submit" value="Submit Order">
+        </h2>
+        </table>
+    </form>
+    <hr>
+    <div>
+        <footer>
+            <center><h1>Copyright &copy; The Namma Shop</h1></center>
+        </footer>
+    </div>
+   <hr>
+</body>
+</html>

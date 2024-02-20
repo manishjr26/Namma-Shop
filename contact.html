@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Contact Information">
+    <title> Contact Us -LTS </title>
+    <link rel="icon" href="./images/soup.jpeg">
+    <style>
+        @keyframes moveText {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+        nav {
+            margin: 2%;
+            background-color: #e44d26; /* Namma Shop brand color */
+            padding: 10px;
+            text-align: center;
+            display: flex; /* Display items side by side */
+            justify-content: center; /* Center items horizontally */
+            font-size: large;
+            font-weight: bold;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav:hover
+        {
+            color: green;
+        }
+        h1 {
+            font-size: 2em;
+            color: aqua; /* Namma Shop brand color */
+            margin-bottom: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center> <i><h1> Contact Us </h1></i> </center>
+        
+    <nav>
+        <nav>
+            <em>
+                
+            <a href="#">Contact Us</a>
+            <a href="hours.html">Hours</a>
+            <a href="practice1.html">Home</a>
+            <a href="menu.html"> Menu</a>
+            <a href="history.html">Our Beginnings</a>
+            </em>
+            
+          <!--  <a href="#give">Give</a> -->
+        </nav>
+    </nav>
+    
+    </header>
+    <hr>
+    <main>
+      <section>         
+           <h2>Our contact Form</h2>
+            <form action="/submit_form" method="post">
+                <fieldset style="background-image: url('/Screenshot\ \(499\).png'); background-repeat: no-repeat;">
+                    <legend> <h2>
+                        Send us a message
+                    </h2> </legend>
+                        <center>
+                            <h2>
+                                <label for="">Name : </label>
+                        <input type="text" name="name" id="" placeholder="Enter name">
+                        <br>
+                        <label for="">Email : </label>
+                        <input type="email" name="name" id="" placeholder="Enter email"><br>
+                        <label for="">Phone : </label>
+                        <input type="number" name="name" id="" placeholder="Enter phone"> <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Suggestions ."></textarea>
+                        <center>
+                            <button type="reset">reset</button>
+                            <button type="submit">submit</button>
+                    </center>
+                            
+                </fieldset>
+            </form> 
+    </section>
+        </main>
+    <hr>
+    <div>
+        <footer>
+            <center><h1>Copyright &copy; The Namma Shop</h1></center>
+        </footer>
+    </div>
+   <hr>
+</body>
+</html>
